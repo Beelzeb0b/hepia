@@ -1,0 +1,32 @@
+package geom2D;
+
+public class Point2D {
+	private Integer x = null;
+	private Integer y = null;
+	
+	public Point2D() {	}
+	
+	public Point2D(int a, int b) {
+		x = a;
+		y = b; 
+	}
+	
+	public Point2D(Point2D pt) {
+		x = pt.x;
+		y = pt.y;
+	}
+	
+	public Point2D(Integer[] pt) {
+		x = pt[0];
+		y = pt[1];
+	}
+	
+	
+	public boolean defini() {
+		return (x != null) && (y != null);
+	}
+	
+	public Integer getX (){
+		return x;
+	}
+}

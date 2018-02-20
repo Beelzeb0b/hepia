@@ -1,0 +1,99 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnvvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U estimation_pi_montecarlo%b  estimation_pi_montecarlo.adb  dbbe0259 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-flteio.ads		20070406091342 e18a47a0
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-numeri.ads		20080324174807 bb51c45a
+D a-numaux.ads		20090409150019 243fe0b7
+D a-nuflra.ads		20100622172941 49c50e0b
+D a-ngelfu.ads		20070406091342 47731de9
+D a-ngelfu.adb		20091130141551 d18bc0c2
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tiflio.ads		20090409150019 56fbda09
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D estimation_pi_montecarlo.adb  20170926141538 871ff976
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20140416172229 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-exnllf.ads		20090409150019 81841eef
+D s-fatflt.ads		20090409150019 11beb392
+D s-fatgen.ads		20090409150019 9267ca45
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-rannum.ads		20100623054052 5eb33f0a
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+X 1 ada.ads
+16K9*Ada 19e8 19|6r6 6r39 7r6 7r39 8r6 8r39 9r6 12r23 22r24
+X 5 a-flteio.ads
+20K13*Float_Text_IO[16|45] 19|7w10 7r43
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[17|45] 19|6w10 6r43
+X 8 a-numeri.ads
+16K13*Numerics 32e17 19|8r10 8r43 9r10 12r27 22r28
+21N4*Pi 19|12r36
+X 10 a-nuflra.ads
+41K22*Float_Random 72e30 19|8w19 8r52
+45R9*Generator 19|15r15
+47F12*Uniformly_Distributed{float}
+49V13*Random{47F12}<32|62p13> 19|29s23 30s22
+51U14*Reset<32|91p14> 19|25s9
+X 11 a-ngelfu.ads
+19k22*Generic_Elementary_Functions 73e46 19|9w19 22r37
+26V13 "**"{float} 19|31s26[22] 31s35[22] 31s41[22]
+X 15 a-textio.ads
+167U14*New_Line 19|41s17 43s17
+X 16 a-tiflio.ads
+67U14*Put 19|40s17[5|20] 42s17[5|20]
+X 19 estimation_pi_montecarlo.adb
+11U11*estimation_pi_montecarlo 11b11 46l5 46t29
+12f9 PI{float}
+13i9 nbIteration{integer}
+14i9 cmpt{integer}
+15r9 Gen{10|45R9} 25r15 29r30 30r29
+16f9 x{float} 29m17 31r25 40r21
+17f9 y{float} 30m17 31r34 42r21
+18f9 adj{float} 31m17
+19f9 caca{float}
+22K12 Math[11|19] 23r8
+X 43 text_io.ads
+24K9*Text_IO=24:29 19|5w6 5r39
+

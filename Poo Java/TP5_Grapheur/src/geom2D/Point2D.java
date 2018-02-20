@@ -1,0 +1,72 @@
+/*
+ * Cedric Dos Reis
+ * Java - TP5 : Grapheur
+ * 19.11.2017
+ * Package : geom2D
+ */
+package geom2D;
+
+public class Point2D {
+	private Integer x = null;
+	private Integer y = null;
+	
+	// GET
+	public Integer getX (){
+		return this.x;
+	}
+	public Integer getY(){
+		return this.y;
+	}
+	// SET
+	public void setX (Integer n) {
+		this.x = n;
+	}
+	public void setY (Integer n) {
+		this.y = n;
+	}
+	
+	// CTOR
+	public Point2D() {	}
+	
+	public Point2D(int a, int b) {
+		x = a;
+		y = b; 
+	}
+	public Point2D(Point2D pt) {
+		x = pt.x;
+		y = pt.y;
+	}
+	public Point2D(Integer[] pt) {
+		x = pt[0];
+		y = pt[1];
+	}
+	
+	// METHODS
+	public boolean defini() {
+		return (this.x != null) && (this.y != null);
+	}
+	
+	// retourne la distance entre 2 point
+	// la racine de : (la distance x au carré + la distance y au carré) 
+	public double dist(Point2D pt){
+		return Math.sqrt(Math.pow(pt.x - this.x,2) +
+				Math.pow(pt.y - this.y,2));  
+	}
+	
+	public String toString(){
+		return "x : " + x + ", y : " + y;
+	}
+	
+	public boolean equals(Point2D point){
+		
+		boolean result = false;
+		
+		//if (!(point instanceof Point2D))
+			if (this.x == point.x & this.y == point.y ){
+				result = true;
+			}
+		
+		return result;
+	}
+	
+}

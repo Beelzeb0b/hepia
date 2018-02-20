@@ -1,0 +1,6 @@
+package geom2D;
+
+public class Droite2D {
+	private Point2D p = null;
+	private double m = null; // pente de la droite
+}

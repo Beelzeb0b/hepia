@@ -1,0 +1,128 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnnnnnvnnvnnvvnnnnnnnnnnnnnnnnnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U array_unid%b		array_unid.adb		59dd4a39 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.float_random%s  a-nuflra.adb	a-nuflra.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.tags%s		a-tags.adb		a-tags.ali
+W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-flteio.ads		20070406091342 e18a47a0
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-numeri.ads		20080324174807 bb51c45a
+D a-numaux.ads		20090409150019 243fe0b7
+D a-nuflra.ads		20100622172941 49c50e0b
+D a-ngelfu.ads		20070406091342 47731de9
+D a-ngelfu.adb		20091130141551 d18bc0c2
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tiflio.ads		20090409150019 56fbda09
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D array_unid.adb	20171003140505 057cb116
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20140416172229 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-exnllf.ads		20090409150019 81841eef
+D s-fatflt.ads		20090409150019 11beb392
+D s-fatgen.ads		20090409150019 9267ca45
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-rannum.ads		20100623054052 5eb33f0a
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+X 1 ada.ads
+16K9*Ada 19e8 19|6r6 6r39 7r6 7r39 8r6 8r39 9r6 35r24
+X 5 a-flteio.ads
+20K13*Float_Text_IO[16|45] 19|7w10 7r43
+X 6 a-inteio.ads
+18K13*Integer_Text_IO[17|45] 19|6w10 6r43
+X 8 a-numeri.ads
+16K13*Numerics 32e17 19|8r10 8r43 9r10 35r28
+X 10 a-nuflra.ads
+41K22*Float_Random 72e30 19|8w19 8r52
+45R9*Generator 19|16r15
+47F12*Uniformly_Distributed{float}
+49V13*Random{47F12}<32|62p13> 19|41s39
+51U14*Reset<32|91p14> 19|38s9
+X 11 a-ngelfu.ads
+19k22*Generic_Elementary_Functions 73e46 19|9w19 35r37
+X 15 a-textio.ads
+74I12*Field{integer}
+167U14*New_Line 19|46s17 58s9 62s9 78s17 84s9 90s25 95s17 106s9 115s9 142s17
+243U14*Put 19|56s9 61s9 82s9 87s25 94s17 104s9 113s9 144s9
+X 16 a-tiflio.ads
+67U14*Put 19|105s9[5|20] 114s9[5|20]
+71i7 Exp{15|74I12} 19|105r22[5|20] 114r23[5|20]
+X 17 a-tiinio.ads
+55U14*Get 19|83s9[6|18]
+65U14*Put 19|45s17[6|18] 57s9[6|18] 77s17[6|18] 88s25[6|18] 141s17[6|18]
+. 145s9[6|18]
+X 19 array_unid.adb
+11U11*array_unid 11b11 149l5 149t15
+12N9 Max 13r46
+13I17 T_Indice{integer} 14r31
+14A14 T_Stat(integer)<integer> 15r19
+15a9 myArray{14A14} 40r18 41m17 44r18 44r33 45r21 50r29 51r18 52r39 53r45
+. 64r18 65r20 65r45 70r28 71m17 71r43 71r68 71r76 72m17 72r25 72r42 72r67
+. 72r75 73m17 73r43 73r68 73r76 76r18 76r33 77r21 85r18 86r39 100r18 101r33
+. 103r39 110r18 111r48 111r83 120r18 122r38 123r33 124r28 126r54 129r25 130m17
+. 130r31 131m17 135r12 136r28 136r36 136r56 136r64 138r27 138r35 140r18 140r33
+. 141r21
+16r9 Gen{10|45R9} 38r15 41r46
+18i9 iPlusPetiteValeur{integer} 122m17 125m34 130r39 131r25
+19i9 plusPetiteValeur{integer} 50m9 52r20 53m25 57r13 121m17 124r41 126m34
+21i9 iGrandeValeur{integer} 63m9 65r28 66m25 70r12 71r25 71r51 72r50 73r25
+. 73r51
+23i9 elementRecherche{integer} 83m13 86r20
+24b9 elementTrouve{boolean} 89m25 93r12
+26i9 Total{integer} 101m17 101r26 103r26
+27f9 Moyenne{float} 103m9 105r13 111r62
+29f9 Variance{float} 109m9 111m17 111r29 114r13
+31i9 median{integer} 136m17 138m17 145r13
+32i9 swap{integer} 129m17 131r47
+35K12 Math[11|19] 36r8
+40i13 I{integer} 41r25
+44i13 I{integer} 45r29
+51i13 I{integer} 52r47 53r53
+64i13 I{integer} 65r53 66r42
+76i13 I{integer} 77r29
+85i13 I{integer} 86r47 88r29
+100i13 I{integer} 101r41
+110i13 I{integer} 111r56
+120i13 I{integer} 121r37 122r46 123r26 129r33 130r25
+123i21 J{integer} 124r36 125r55 126r62
+140i13 I{integer} 141r29
+X 43 text_io.ads
+24K9*Text_IO=24:29 19|5w6 5r39
+

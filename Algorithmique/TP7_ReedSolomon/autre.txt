@@ -1,0 +1,201 @@
+procedure Reduit_Polyn(p : in out T_polynome)is
+		reduit: T_polynome(Integer'Max(0, p.Degre-1));
+	begin
+		if p.Degre /= 0 and then p.Coeff(p.Degre).num = 0 then
+			-- Transfere les coefficient du polynome dans un nouveau polynome de degre-1
+			for I in 0..reduit.Degre loop
+				reduit.Coeff(I) := p.Coeff(I);
+			end loop;
+			if reduit.Degre = 0 then
+				return reduit; -- ce polynome est reduit au max 
+			else
+				return Reduit_Polyn(reduit); 
+			end if;
+		else
+			return p; --le polynome n'a pas besoin d'etre reduit
+		end if;
+	end Reduit_Polyn;
+
+
+
+function "/"(dividende, diviseur : T_Polynome) return T_Polynome is
+		quotient : T_Polynome(dividende.Degre - diviseur.Degre);
+		newDividende : T_Polynome;--(dividende.Degre-1);
+	begin
+		New_line;
+		Put("Dividende : "); Put(dividende); New_Line;
+		put("Diviseur ; "); put(diviseur); new_line;
+		-- Impossible de diviser le dividende si le diviseur à un degré plus grand
+		if dividende.Degre > diviseur.Degre then
+			-- divise le coeff de degre max du dividende par le coeff de degré max du diviser
+			quotient.Coeff(dividende.Degre - diviseur.Degre) := dividende.Coeff(dividende.Degre) / diviseur.Coeff(diviseur.Degre);
+			Put("quotient : " ); put(quotient); New_line;
+			newDividende := Reduit_Polyn(dividende - (diviseur * quotient)); 
+			Put("N dividende : "); put(newDividende);New_line;
+			return quotient + (newDividende / diviseur); -- recursif
+		else
+			return quotient;-- retourne un polynome dont tous les coefficient sont à 0/1
+		end if;
+	end "/";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if Argument_Count = 0 then -- mode dynamique
+		--demande le nombre de point
+		Put("Nombre de données : ");
+		data := 10;
+		--Get(data);
+
+		--demande le nombre de point supplémentaires
+		Put("Parités (nombre d'erreurs corrigibles): ");
+		parity := 2;
+		--Get(parity);
+
+		--taille total
+		total := data + 2 *parity;
+		
+		declare
+			points : T_Points(total); 
+		begin
+			for i in 1..total loop
+				Put("Entrer les coordonnées du point"); put(Integer'Image(i));
+				points(i).x := i;
+				points(i).y := i**2;
+				--Get(points(i).x);
+				--Get(points(i).y);
+			end loop;
+			
+		end;
+			
+		
+		-- demande les coorodonné
+	else	
+		if Argument_Count mod 2 = 0 then
+			for i in 1.. Argument_Count loop
+				null;
+			end loop;
+		else
+			Put_Line("Erreur : nombre de valeurs incorrect. Doit être un multiple de 2")	;
+		end if;
+	end if;
+	
+	-- si argument recu -> affiche le polynome d'interpolation
+	-- sinon recupere k puis les n
+	-- fixer les valeur de k et n
+	-- k : nombre d'octets
+	-- n : nombre d'octets supplémentaire
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f1 := (1, 2);
+	f2 := (3, 5);
+
+	Put(f1); Put(" +"); Put(f2); new_line;	--addition
+	put(f1+f2); new_line; new_line;
+
+	Put(f1); Put(" -"); Put(f2); new_line; -- soustraction
+	put(f1-f2); new_line; new_line;
+
+	Put(f1); Put(" *"); Put(f2); new_line; -- multiplication
+	put(f1*f2); new_line; new_line;
+
+	Put(f1); Put(" *"); Put(Integer'Image(n)); new_line;
+	put(f1*n); new_line; new_line;
+
+	Put(f1); Put(" /"); Put(f2); new_line; -- division
+	put(f1/f2); new_line; new_line;
+
+	Put(f1); Put(" /"); Put(Integer'Image(n)); new_line;
+	put(f1/n); new_line; new_line;
+
+	Put(Integer'Image(n)); Put(" /"); Put(f2); new_line;
+	put(n/f2); new_line; new_line;
+	
+	Put(f1); Put(" **"); Put(Integer'Image(n)); new_line; -- puissance
+	put(f1**n); new_line; new_line;
+
+	Put(Integer'Image(20));Put(Integer'Image(12)); Put(" PGCD");new_line;
+	Put(Integer'Image(PGCDof(20,12)));new_line;new_line;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+p0 : T_Polynome(0);
+	p1, p2 : T_Polynome(1);
+	p3 : T_Polynome(3);
+	f0,f1, f2, f3, f4, f5, f6, f7 : T_Fraction;
+begin
+	f0 := (0,1);
+	f1 := (1,1);
+	f2 := (2,1);
+	f3 := (3,1);
+	f4 := (4,1);
+	f5 := (5,1);
+	f6 := (6,1);
+	f7 := (7,1);
+
+	p0.Coeff(0) := f1;
+
+	p1.Coeff(0) := f1;
+	p1.Coeff(1) := f2;
+	
+	p2.Coeff(0) := f3;
+	p2.Coeff(1) := f2;
+
+	p3.Coeff(0) := f1;
+	p3.Coeff(1) := f3;
+	p3.Coeff(2) := f0;
+	p3.Coeff(3) := f4;
+
+	Put(p1); put(" +"); Put(p3); put(" ="); Put(p3+p1); New_Line; New_Line;
+	Put(p2); put(" -"); Put(p2); put(" ="); Put(p2-p2); New_Line; New_Line;
+	Put(p3); put(" *"); Put(p2); put(" ="); Put(p3*p2); New_Line; New_Line;
+	Put(p2); put(" *"); Put(f3); put(" ="); Put(p2*f3); New_Line; New_Line;
+	Put("Evalue "); Put(p3); Put(" à"); put(f2); Put(" :"); Put(Eval(p3, f2)); New_Line; New_Line;
+	Put("Division de "); put(p3); put(" par "); put(p1); put(" = "); put(p3/p1);New_Line; New_Line;
+	Put("Reste de "); put(p3); put(" diviser par "); put(p1); put(" = "); put(Reste(p3,p1));New_Line; New_Line;

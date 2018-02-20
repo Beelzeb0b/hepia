@@ -1,0 +1,117 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnnnnnnnnnnnnnnnnnnnnnnnvnnnvnnnnnnnnnnnnnnnnnnnnnnnnnnnnvnnnnnvnnnnnnnnnnnnnnn
+
+U transforme_image%b	transforme_image.adb	3704f735 NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W text_io%s		text_io.ads		text_io.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D system.ads		20140416172229 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-wchcon.ads		20090417130712 bfeb2e3d
+D text_io.ads		20070406091342 45d626c9
+D transforme_image.adb	20171114132723 84995858
+X 1 ada.ads
+16K9*Ada 19e8 32|7r6 7r31
+X 5 a-inteio.ads
+18K13*Integer_Text_IO[10|45] 32|7w10 7r35
+X 9 a-textio.ads
+52P9*File_Type(370R9) 32|25r18 47r18 71r19
+53n23*In_File{53E9} 32|31r20 52r20
+53n32*Out_File{53E9} 32|73r23
+87U14*Create 32|73s7
+93U14*Open 32|31s7 52s7
+99U14*Close 32|41s7 66s7 89s7
+166U14*New_Line 32|75s7 78s7 80s7 85s17
+211U14*Look_Ahead 32|34s10 55s10
+242U14*Put 32|74s7
+245U14*Get_Line 32|32s7 36s10 53s7 57s10 59s7 60s7
+X 10 a-tiinio.ads
+50U14*Get 32|38s7[5|18] 39s7[5|18] 40s7[5|18] 63s13[5|18]
+59U14*Put 32|76s7[5|18] 77s7[5|18] 79s7[5|18] 83s13[5|18]
+X 31 text_io.ads
+24K9*Text_IO=24:29 32|6w6 6r19
+X 32 transforme_image.adb
+9U11*Transforme_Image 9b11 139l5 139t21
+10A9 T_Image(natural)<integer><integer> 46r31 70r54 93r15 96r42 106r53 107r28
+. 117r55 118r28
+12R9 T_Texte 15e14 18r15
+13a7 Txt{string} 32m37 74r32
+14i7 Longueur{natural} 32m54 74r52
+17R9 T_Entete 21e14 24r53 26r18 70r33 92r15
+18r7 Genre{12R9} 32m31 32m48 74r26 74r46
+19i7 Dim_X{natural} 38m26 76r26 93r36
+19i14 Dim_Y{natural} 39m26 77r26 93r55
+20i7 Niveau{natural} 40m26 79r26
+24V13 LireEntete{17R9} 24b13 24>24 43l8 43t18 92s27
+24s24 Nom_Fichier{string} 31r28
+25p7 Fichier{9|52P9} 31m12 32r16 34r21 36r19 38r11 39r11 40r11 41m13
+26r7 Entete{17R9} 32m24 32m41 38m19 39m19 40m19 42r14
+27a7 Tmp{string} 34m29 35r20 36m27
+28i7 Longueur{natural} 36m31
+29b7 b{boolean} 34m36
+46U14 Lire 46b14 46<19 46>40 67l8 67t12 128s4
+46a19 Image{10A9} 61r16 62r19 63m25
+46s40 Nom_Fichier{string} 52r28
+47p7 Fichier{9|52P9} 52m12 53r16 55r21 57r19 59r16 60r16 63r17 66m14
+48a7 Tmp{string} 53m24 55m29 56r20 57m27 59m24 60m24
+49i7 Longueur{natural} 53m28 57m31 59m28 60m28
+50b7 b{boolean} 55m36
+61i11 I{integer} 63r31
+62i14 J{integer} 63r33
+70U14 Ecrire 70b14 70>22 70>43 70>63 90l8 90t14 137s4
+70r22 Entete{17R9} 74r19 74r39 76r19 77r19 79r19
+70a43 Image{10A9} 81r16 82r19 83r26 84r23
+70s63 Nom_Fichier{string} 73r32
+71p7 Fichier{9|52P9} 73m15 74r11 75r16 76r11 77r11 78r16 79r11 80r16 83r17
+. 85r26 89m14
+81i11 I{integer} 83r33 84r18
+82i14 J{integer} 83r35 84r39
+92r4 monEntete{17R9} 93r26 93r45 137r11
+93a4 monImage{10A9} 98r26 99r29 100m23 100r47 109r26 110r29 111m23 111r52
+. 120r26 121r29 122m23 122r49 128m9 132m30 137r21
+96U19 Negatif 96b19 96=27 103l13 103t20
+96a27 Image{10A9}
+98i21 I{integer} 100r33 100r57
+99i24 J{integer} 100r35 100r59
+106U19 Symetrie_Verticale 106b19 106=38 114l13 114t31
+106a38 Image{10A9} 107r39
+107a17 tmpImage{10A9} 111r40
+109i21 I{integer} 111r32 111r49
+110i24 J{integer} 111r34 111r73
+117U19 Symetrie_Horizontale 117b19 117=40 125l13 125t33 132s9
+117a40 Image{10A9} 118r39
+118a17 tmpImage{10A9} 122r40
+120i21 I{integer} 122r32 122r70
+121i24 J{integer} 122r34 122r77
+

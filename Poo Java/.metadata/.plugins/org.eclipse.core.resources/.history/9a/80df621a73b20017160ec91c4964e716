@@ -1,0 +1,15 @@
+
+public class Point2Dold {
+	private Integer x = null;
+	private Integer y = null;
+	
+	public Point2Dold() {	}
+	public Point2Dold(int a, int b) {
+		x = a;
+		y = b; 
+	}
+	
+	public boolean defini() {
+		return (x != null) && (y != null);
+	}
+}

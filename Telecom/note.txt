@@ -1,0 +1,17 @@
+Information et codage
+
+1.3) Quatité d'information
+  l(Xi) = -log2(Prob(Xi)) [sh]
+
+1.4) Quatité d'information moyenne ou entropie
+  H(X) = Sigma(Prob(Xi)*l(Xi)) [sh]
+
+1.5) Quantité de décision
+  D=Log2(m) [bit]
+
+1.6) Redondance
+  R = D-H
+
+1.7)
+  C=Bp*log2(1+snr) 
+  snr -> linéaire = P_signal/P_bruit

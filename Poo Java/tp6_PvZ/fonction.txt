@@ -1,0 +1,18 @@
+http://zetcode.com/tutorials/javagamestutorial/
+http://www.edu4java.com/en/game/game0-en.html
+http://www.gametutorial.net/article/Java-game-framework
+
+private Image loadImage(String name){
+	Image img;
+	ImageIcon ii = new ImageIcon(name);
+	img = ii.getImage();
+}
+
+@Override
+public void paintComponent(Graphics g, (Image img)) {
+	g.drawImage(img, 0, 0, null);
+}
+
+public Rectangle getBounds() {
+    return new Rectangle(x, y, width, height);
+}

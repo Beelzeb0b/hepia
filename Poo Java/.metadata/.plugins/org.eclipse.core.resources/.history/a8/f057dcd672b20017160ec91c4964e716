@@ -1,0 +1,4 @@
+package geom2D;
+public class Point2D {
+
+}
